@@ -1,0 +1,128 @@
+/* line borders */
+#side_bar, #page_body {
+  border-style: solid;
+  border-color: #555;
+  border-width: 0px 2px 0px 0px;
+}
+
+.page_block,.page_media_poll_wrap {
+  box-shadow: 0 0px 0 0 #000 !important;
+  background-color: rgba(66, 66, 66, 0);
+  color: #aaa;
+}
+
+a, .nim-dialog--name-w, .fl_l {
+  color: #ddd !important;
+}
+.module_header {
+  background-color: rgba(66, 66, 66, 0.5);
+}
+
+.flat_button {
+  background-color: #333 !important;
+}
+
+.counts_module {
+  display: none;
+}
+
+#post_field, .submit_post, .text, .reply_field, .reply_fakebox, .ba_post, .ba_text, .wr_header, .replies_open, .ui_grey_block, .im-chat-input--text, .page_status_input{
+  background: rgba(33, 33, 33, 0.5) !important;
+  border: 1px dashed gray !important;
+  color: #fff !important; 
+}
+
+.submit_post, .reply_wrap, .post_full_like_wrap, .replies_list, .reply_fakebox_wrap,  .nim-dialog--content {
+  border-top: 0px !important;
+}
+.im-mess-stack .im-mess-stack--mess li:last-of-type, #pv_author_block, .feed_new_posts {
+   border-bottom: 0px !important;
+ }
+
+.ts_cont_wrap {
+   background: #636363 !important;
+   border: 1px solid white !important;
+}
+
+.top_notify_wrap, .top_notify_show_all, .top_notify_header{
+  background: #636363 !important;
+  border: 0px;
+}
+
+#audio_layer_tt *, .im-page--peer, .page_poll_row_count, .ts_cont_wrap *  {
+  color: #fff !important;
+}
+
+#audio_layer_tt, .audio_page_player, .ui_search_field, .ui_rmenu_item, .audio_friends_list, #top_profile_menu, .ms_items_more, .ui_actions_menu, .editor, #pv_author_block, .tt_default{
+  background-color: rgba(0,0,0,0.8) !important;
+}
+
+#pv_box, .pv_reply_form_wrap, .narrow_column, .im-page--history-new-bar, .feed_row, .post{
+  background: none !important;
+}
+
+.im-page--history-new-bar{
+  position: unset;
+}
+
+.pv_narrow_column_wrap {
+   background-color: rgba(0,0,0,0.8) !important;
+}
+
+.ui_rmenu_item:hover, .audio_friend:hover, .audio_row.audio_row_current,  .nim-dialog_selected, .im-mess_selected,  .audio_row.audio_row:hover, .post_like:hover, ._like_wrap:hover, .post_share:hover, .wr_header:hover, .replies_open:hover, .nim-dialog:hover, .ms_item:hover, .ui_actions_menu_item:hover, .left_row:hover, .my_current_info:hover, .ui_rmenu_subitem:hover, .feed_new_posts:hover {
+   background-color: rgba(122,122,122,0.3) !important;
+}
+
+ .nim-dialog:hover, ._im_dialog {
+    border-color: rgba(0,0,0,0) !important;
+ }
+
+.ts_contact.active, .ts_search_link.active {
+   background: #737373 !important;
+}
+
+.head_nav_btns {
+  padding-right: 5px;
+}
+
+.copy_quote {
+  border: 0 !important;
+}
+.back,  .audio_layer_bottom  {
+/*     width: 0% !important;
+  left: 15%;
+  border-radius: 0px 0px 10px 10px;
+  border-bottom: 0px !important;
+  background: linear-gradient(to bottom, #050505 0%,#383838 81%,#515151 100%) !important; */
+  display: none;
+}
+
+/*   .content {
+ 
+  border-radius: 0px 0px 10px 10px;
+  border-bottom: 0px !important;
+  background: linear-gradient(to bottom, #050505 0%,#383838 81%,#515151 100%) !important; 
+
+} */
+
+.page_square_photo {
+  max-height: 80px;
+  max-width: 80px;
+}
+#profile_photos_module {
+ height: 120px;
+}
+ 
+.page_poll_percent {
+  background: rgba(122,122,122,0.8) !important;
+
+}
+
+.page_poll_row {
+  background: rgba(22,22,22,0.8) !important;     
+}
+
+.page_poll_row_percent{
+ color: #ddd !important;
+}
+
