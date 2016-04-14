@@ -111,7 +111,7 @@ $no-bg: (
 	$headers
 	);
 $choose-element: '#docs_choose_rows', '#choose_audio_rows';
-$smth-black-bg-light-font-zero-border: '.im-to-end';
+$smth-black-bg-light-font-zero-border: '.im-to-end', '.im-mess_unread';
 $smth-with-black-bg-and-light-font: (
 	'#audio_layer_tt',
 	'.audio_page_player',
@@ -281,9 +281,14 @@ $hidden-content: $main-header, $my-page-stat, $audio-bottom;
 		width: 140% !important;
 	}
 
-	//remove white line add 'new messages' bar
+	//remove white line at 'new messages' bar
 	.im-page--history-new-bar{
 		position: unset !important;
+	}
+
+	//remove white line at new messages bottom
+	.im-mess_unread:last-child::before {
+		content: unset !important;
 	}
 
 	//dark text selection
