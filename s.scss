@@ -140,6 +140,7 @@ $smth-with-black-bg-and-light-font: (
 	'.box_body',
 	'.ui_suggester_results_list',
 	'.slider_hint',
+	'#wl_post',
 	$choose-element
 	);
 $smth-with-black-bg-and-light-font: join($smth-with-black-bg-and-light-font, $notify-elements);
