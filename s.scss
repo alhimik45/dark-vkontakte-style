@@ -50,7 +50,6 @@ $bordered-elements: (
 	'.post_full_like_wrap',
 	'.replies_list',
 	'.reply_fakebox_wrap,'  
-	'.nim-dialog--content',
 	'.im-mess-stack .im-mess-stack--mess li:last-of-type',
 	'#pv_author_block',
 	'.feed_new_posts',
@@ -85,10 +84,12 @@ $block-header: '.module_header';
 $main-header: '.back';
 $my-page-stat: '.counts_module';
 $audio-bottom: '.audio_layer_bottom';
-$dialog-menu-elements: '.nim-dialog:hover', '._im_dialog';
+$dialog-menu-elements: '.nim-dialog:hover', '._im_dialog', '.nim-dialog--content';
 $box-title: '* [class*="box_title"]';
 $btn-cut: '* [class*="profile_btn_cut_"]';
 $headers: '* [class*="_header"]';
+$feed-elements: '#feed_rmenu', '#feed_filters';
+$dialog-name-elements: '.nim-dialog--photo', '.nim-dialog--text-preview', '.nim-dialog--date', '.nim-dialog--close';
 //MIDDLE
 $no-bg: (
 	'#pv_box',
@@ -175,6 +176,7 @@ $selectables: (
 	'.im-mess_selected',
 	'.ts_contact.active',
 	'.ts_search_link.active',
+	'.ui_rmenu_item_sel'
 	);
 $hover-selection: join(append-to-elements($hoverables, ':hover'), $selectables, comma);
 
@@ -190,7 +192,7 @@ $black-some-transparent-bg: $main-search, $smth-with-black-bg-and-light-font;
 $base-semi-transparent-bg: $button, $block-header, $box-title;
 $light-semi-transparent-bg: $text-box;
 $dashed-border: $text-box;
-$hidden-content: $main-header, $my-page-stat, $audio-bottom;
+$hidden-content: $main-header, $my-page-stat, $audio-bottom, $feed-elements, $dialog-name-elements;
 
 @-moz-document regexp("https?://new\.vk\.com(?!(/stats)).*") {
 	#{$no-bg} {
@@ -275,9 +277,6 @@ $hidden-content: $main-header, $my-page-stat, $audio-bottom;
 	}
 
 	//wider feed
-	#feed_rmenu, #feed_filters {
-		display: none !important;
-	}
 	#main_feed {
 		width: 140% !important;
 	}
@@ -295,6 +294,38 @@ $hidden-content: $main-header, $my-page-stat, $audio-bottom;
 	//dark text selection
 	::-moz-selection, .audio_performer em {
  		background: rgba($light-color, 0.6) !important;
+	}
+
+	//compact dialog names
+	.nim-dialog {
+		padding: 0px !important;
+		height: unset !important;
+	}
+	.nim-dialog--cw {
+		padding: 0px !important;
+	}
+	.nim-dialog--content {
+		margin-left: 10px !important;
+	}
+	.nim-dialog--name-w {
+		max-width: unset !important;
+	}
+	$dialogs-list-width: 180px;
+	.im-page--dialogs {
+		width: $dialogs-list-width !important;
+	}
+	.im-page--history {
+		margin-left: $dialogs-list-width !important;
+	}
+	.ui_search_custom input.ui_search_field {
+		padding-right: unset !important;
+	}
+	.im-page--dialogs-filter {
+		padding: 15px 0px 15px 5px !important;
+		font-size: 10px !important;
+	}
+	.nim-dialog--unread {
+		margin-top: -21px !important;
 	}
 
 	body {
