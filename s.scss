@@ -115,6 +115,9 @@ $no-bg: (
 	'.page_media_thumbed_link',
 	'.mention_tt_actions',
 	'.mv_controls',
+	'.feedback_row_answer',
+	'.feedback_row_clickable:hover:not(.feedback_row_touched)',
+	'.im-mess.im-mess_gift',
 	$headers
 	);
 $choose-element: '#docs_choose_rows', '#choose_audio_rows';
@@ -149,7 +152,8 @@ $smth-with-black-bg-and-light-font: (
 	'.slider_hint',
 	'#wl_post',
 	'.mv_wide_column',
-	'.feedback_sticky_row.unread',
+	'.feedback_sticky_row',
+	'.feedback_row',
 	$choose-element
 	);
 $smth-with-black-bg-and-light-font: join($smth-with-black-bg-and-light-font, $notify-elements);
