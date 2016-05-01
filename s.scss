@@ -157,6 +157,7 @@ $smth-with-black-bg-and-light-font: (
 	'.feedback_sticky_row',
 	'.feedback_row',
 	'._audio_padding_cont',
+	'.audio_layout',
 	$choose-element
 	);
 $smth-with-black-bg-and-light-font: join($smth-with-black-bg-and-light-font, $notify-elements);
@@ -341,6 +342,10 @@ $hidden-content: $main-header, $my-page-stat, $audio-bottom, $feed-elements, $di
 	}
 	.nim-dialog--unread {
 		margin-top: -21px !important;
+	}
+
+	.ui_rmenu {
+		padding : 0px !important;
 	}
 
 	body {
