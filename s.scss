@@ -77,7 +77,8 @@ $text-elements: (
 	'.profile_info_header_wrap > *',
 	'.page_media_thumbed_link *',
 	'.mv_title_panel *',
-	'.audio_title_inner'
+	'.audio_title_inner',
+	'.photos_album_intro *'
 	);
 $main-search: '.ts_cont_wrap';
 $page-block: '.page_block';
@@ -120,6 +121,7 @@ $no-bg: (
 	'.feedback_row_clickable:hover:not(.feedback_row_touched)',
 	'.im-mess.im-mess_gift',
 	'.eltt',
+	'.wall_module .reply',
 	$headers
 	);
 $choose-element: '#docs_choose_rows', '#choose_audio_rows';
