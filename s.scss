@@ -160,6 +160,7 @@ $smth-with-black-bg-and-light-font: (
 	'.feedback_row',
 	'._audio_padding_cont',
 	'.audio_layout',
+	'#wk_content',
 	$choose-element
 	);
 $smth-with-black-bg-and-light-font: join($smth-with-black-bg-and-light-font, $notify-elements);
@@ -310,7 +311,7 @@ $hidden-content: $main-header, $my-page-stat, $audio-bottom, $feed-elements, $di
 	}
 
 	//dark text selection
-	::-moz-selection, .audio_performer em {
+	::-moz-selection, em {
  		background: rgba($light-color, 0.6) !important;
 	}
 
