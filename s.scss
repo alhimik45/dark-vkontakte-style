@@ -306,7 +306,7 @@ $hidden-content: $main-header, $my-page-stat, $audio-bottom, $feed-elements, $di
 	}
 
 	//remove white line at new messages bottom
-	.im-mess_unread:last-child::before {
+	.im-mess_unread:last-child::before, .im-mess.im-mess_unread + .im-mess::before {
 		content: unset !important;
 	}
 

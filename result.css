@@ -65,7 +65,7 @@
   .im-page--history-new-bar {
     position: unset !important; }
 
-  .im-mess_unread:last-child::before {
+  .im-mess_unread:last-child::before, .im-mess.im-mess_unread + .im-mess::before {
     content: unset !important; }
 
   ::-moz-selection, em {
