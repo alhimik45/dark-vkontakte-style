@@ -67,6 +67,7 @@ $bordered-elements: (
 	'.im-page--header-chat',
 	'.im-chat-input',
 	'.group_list_row',
+	'.audio_friend_selected',
 	$doc-item-list
 	);
 $text-elements: (
@@ -197,7 +198,8 @@ $selectables: (
 	'.im-mess_selected',
 	'.ts_contact.active',
 	'.ts_search_link.active',
-	'.ui_rmenu_item_sel'
+	'.ui_rmenu_item_sel',
+	'.audio_friend_selected'
 	);
 $hover-selection: join(append-to-elements($hoverables, ':hover'), $selectables, comma);
 
