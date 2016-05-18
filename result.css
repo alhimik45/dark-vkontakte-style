@@ -26,7 +26,7 @@
   #post_field, .submit_post, .text, .reply_field, .reply_fakebox, .ba_post, .ba_text, .wr_header, .replies_open, .ui_grey_block, .im-chat-input--text, .page_status_input {
     border: 1px dashed #424242 !important; }
 
-  * [class*="_img"], img, .thumb, .nim-peer--photo-w {
+  * [class*="_img"], img, .thumb, .nim-peer--photo-w, .ow_ava, .ow_ava_small {
     border-radius: 0px !important; }
 
   .nim-dialog:hover, ._im_dialog, .nim-dialog--content {
