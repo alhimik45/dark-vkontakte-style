@@ -68,6 +68,7 @@ $bordered-elements: (
 	'.im-chat-input',
 	'.group_list_row',
 	'.audio_friend_selected',
+	'.im-page--mess-search',
 	$doc-item-list
 	);
 $text-elements: (
@@ -164,6 +165,7 @@ $smth-with-black-bg-and-light-font: (
 	'._audio_padding_cont',
 	'.audio_layout',
 	'#wk_content',
+	'.im-page--mess-search',
 	$choose-element
 	);
 $smth-with-black-bg-and-light-font: join($smth-with-black-bg-and-light-font, $notify-elements);
@@ -190,6 +192,7 @@ $hoverables: (
 	'.ui_suggester_results_list li',
 	'#top_profile_menu > a',
 	'.im_rc_emojibtn',
+	'.im-page--mess-search',
 	$doc-item-list
 	);
 $selectables: (
