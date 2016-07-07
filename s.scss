@@ -166,6 +166,7 @@ $smth-with-black-bg-and-light-font: (
 	'.audio_layout',
 	'#wk_content',
 	'.im-page--mess-search',
+	'.im-page--top-date-bar-inner',
 	$choose-element
 	);
 $smth-with-black-bg-and-light-font: join($smth-with-black-bg-and-light-font, $notify-elements);
