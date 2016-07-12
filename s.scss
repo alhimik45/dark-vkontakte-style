@@ -126,6 +126,9 @@ $no-bg: (
 	'.im-mess.im-mess_gift',
 	'.eltt',
 	'.wall_module .reply',
+	'.wall_module .reply_fakebox_wrap',
+	'.wall_module .reply_box',
+	'.wall_module .reply_form',
 	$headers
 	);
 $choose-element: '#docs_choose_rows', '#choose_audio_rows';
@@ -357,6 +360,16 @@ $hidden-content: $main-header, $my-page-stat, $audio-bottom, $feed-elements, $di
 
 	.ui_rmenu {
 		padding : 0px !important;
+	}
+
+	//normal avatar in comment
+	.wall_module .reply_fakebox, .post_field_wrap, .reply_field_wrap {
+		margin-left: 66px !important;
+	}
+	.post_field_user_image {
+		width: unset !important;
+		height: unset !important;
+		top: unset !important;
 	}
 
 	//search menu bg
