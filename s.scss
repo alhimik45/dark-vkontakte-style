@@ -69,6 +69,7 @@ $bordered-elements: (
 	'.group_list_row',
 	'.audio_friend_selected',
 	'.im-page--mess-search',
+	'.im-page.im-page_classic .im-page--chat-input',
 	$doc-item-list
 	);
 $text-elements: (
@@ -102,6 +103,9 @@ $ads: '#ads_left';
 $bad-ui: '.ui_rmenu_sep';
 
 //MIDDLE
+$no-shadow: (
+	'.im-page.im-page_classic .im-page--chat-body-abs'
+	);
 $no-bg: (
 	'#pv_box',
 	'.pv_reply_form_wrap',
@@ -129,6 +133,7 @@ $no-bg: (
 	'.wall_module .reply_fakebox_wrap',
 	'.wall_module .reply_box',
 	'.wall_module .reply_form',
+	'.im-page.im-page_classic .im-page--chat-body-wrap-inner',
 	$headers
 	);
 $choose-element: '#docs_choose_rows', '#choose_audio_rows';
@@ -170,6 +175,8 @@ $smth-with-black-bg-and-light-font: (
 	'#wk_content',
 	'.im-page--mess-search',
 	'.im-page--top-date-bar-inner',
+	'.im-page.im-page_classic .im-page--header-inner',
+	'.im-page.im-page_classic .im-page--chat-input',
 	$choose-element
 	);
 $smth-with-black-bg-and-light-font: join($smth-with-black-bg-and-light-font, $notify-elements);
@@ -215,7 +222,7 @@ $transparent-border: $dialog-menu-elements;
 $zero-radius-border: $rounded-images;
 $zero-border: $notify-elements, $bordered-elements, $box-title, $btn-cut, $smth-black-bg-light-font-zero-border;
 $transparent-bg: $page-block, $poll-block;
-$without-shadows: $page-block;
+$without-shadows: $no-shadow, $page-block;
 $with-light-font: $page-block, $text-box, $text-elements, $box-title, $smth-with-black-bg-and-light-font, $headers;
 $like-a-link: $clickable;
 $black-some-transparent-bg: $main-search, $smth-with-black-bg-and-light-font;
@@ -340,7 +347,7 @@ $hidden-content: $main-header, $my-page-stat, $audio-bottom, $feed-elements, $di
 	.nim-dialog--name-w {
 		max-width: unset !important;
 	}
-	$dialogs-list-width: 180px;
+	$dialogs-list-width: 0;
 	.im-page--dialogs {
 		width: $dialogs-list-width !important;
 	}
