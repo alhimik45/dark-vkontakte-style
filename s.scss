@@ -100,11 +100,15 @@ $headers: '* [class*="_header"]';
 $feed-elements: '#feed_rmenu', '#feed_filters';
 $dialog-name-elements: '.nim-dialog--photo', '.nim-dialog--text-preview', '.nim-dialog--date', '.nim-dialog--close';
 $ads: '#ads_left';
-$bad-ui: '.ui_rmenu_sep';
+$bad-ui: (
+	'.ui_rmenu_sep',
+	'.nim-dialog--unread'
+	);
 
 //MIDDLE
 $no-shadow: (
-	'.im-page.im-page_classic .im-page--chat-body-abs'
+	'.im-page.im-page_classic .im-page--chat-body-abs',
+	'.im-page.im-page_classic .im-page--dcontent'
 	);
 $no-bg: (
 	'#pv_box',
@@ -134,6 +138,8 @@ $no-bg: (
 	'.wall_module .reply_box',
 	'.wall_module .reply_form',
 	'.im-page.im-page_classic .im-page--chat-body-wrap-inner',
+	'.im-page a.im-page--back-button:hover::before',
+	'.im-page.im-page_classic .im-page--dcontent',
 	$headers
 	);
 $choose-element: '#docs_choose_rows', '#choose_audio_rows';
@@ -204,6 +210,7 @@ $hoverables: (
 	'#top_profile_menu > a',
 	'.im_rc_emojibtn',
 	'.im-page--mess-search',
+	'.im-page--back-button',
 	$doc-item-list
 	);
 $selectables: (
@@ -229,7 +236,7 @@ $black-some-transparent-bg: $main-search, $smth-with-black-bg-and-light-font;
 $base-semi-transparent-bg: $button, $block-header, $box-title;
 $light-semi-transparent-bg: $text-box;
 $dashed-border: $text-box;
-$hidden-content: $main-header, $my-page-stat, $audio-bottom, $feed-elements, $dialog-name-elements, $ads, $bad-ui;
+$hidden-content: $main-header, $my-page-stat, $audio-bottom, $feed-elements, $ads, $bad-ui;
 
 @-moz-document regexp("https?://new\.vk\.com(?!(/stats)).*") {
 	#{$no-bg} {
@@ -331,38 +338,6 @@ $hidden-content: $main-header, $my-page-stat, $audio-bottom, $feed-elements, $di
 	//dark text selection
 	::-moz-selection, em {
  		background: rgba($light-color, 0.6) !important;
-	}
-
-	//compact dialog names
-	.nim-dialog {
-		padding: 0px !important;
-		height: unset !important;
-	}
-	.nim-dialog--cw {
-		padding: 0px !important;
-	}
-	.nim-dialog--content {
-		margin-left: 10px !important;
-	}
-	.nim-dialog--name-w {
-		max-width: unset !important;
-	}
-	$dialogs-list-width: 0;
-	.im-page--dialogs {
-		width: $dialogs-list-width !important;
-	}
-	.im-page--history {
-		margin-left: $dialogs-list-width !important;
-	}
-	.ui_search_custom input.ui_search_field {
-		padding-right: unset !important;
-	}
-	.im-page--dialogs-filter {
-		padding: 15px 0px 15px 5px !important;
-		font-size: 10px !important;
-	}
-	.nim-dialog--unread {
-		margin-top: -21px !important;
 	}
 
 	.ui_rmenu {
