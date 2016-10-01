@@ -1,5 +1,5 @@
-@-moz-document regexp("https?://new\.vk\.com(?!(/stats)).*") {
-  #pv_box, .pv_reply_form_wrap, .narrow_column, .im-page--history-new-bar, .feed_row, .post, .profile_info_header_wrap > *, .ui_search, #stl_bg, .ui_tabs_header, #wk_box, .wk_history_tabs, .web_cam_photo, .photos_choose_upload_area, .im-page--history-new-bar > span, .page_media_thumbed_link, .mention_tt_actions, .mv_controls, .feedback_row_answer, .feedback_row_clickable:hover:not(.feedback_row_touched), .im-mess.im-mess_gift, .eltt, .wall_module .reply, .wall_module .reply_fakebox_wrap, .wall_module .reply_box, .wall_module .reply_form, .im-page.im-page_classic .im-page--chat-body-wrap-inner, .im-page a.im-page--back-button:hover::before, .im-page.im-page_classic .im-page--dcontent, * [class*="_header"] {
+@-moz-document regexp("https?://new\.vk\.com(?!(/stats|/editapp)).*") {
+  #pv_box, .pv_reply_form_wrap, .narrow_column, .im-page--history-new-bar, .feed_row, .post, .profile_info_header_wrap > *, .ui_search, #stl_bg, .ui_tabs_header, #wk_box, .wk_history_tabs, .web_cam_photo, .photos_choose_upload_area, .im-page--history-new-bar > span, .page_media_thumbed_link, .mention_tt_actions, .mv_controls, .feedback_row_answer, .feedback_row_clickable:hover:not(.feedback_row_touched), .im-mess.im-mess_gift, .eltt, .wall_module .reply, .wall_module .reply_fakebox_wrap, .wall_module .reply_box, .wall_module .reply_form, .im-page.im-page_classic .im-page--chat-body-wrap-inner, .im-page a.im-page--back-button:hover::before, .im-page.im-page_classic .im-page--dcontent, .pv_author_block, * [class*="_header"] {
     background: none !important; }
 
   .page_block, .page_media_poll_wrap {
@@ -38,7 +38,7 @@
   .back, .counts_module, .audio_layer_bottom, #feed_rmenu, #feed_filters, #ads_left, .ui_rmenu_sep, .nim-dialog--unread {
     display: none !important; }
 
-  .top_notify_wrap, .top_notify_show_all, .top_notify_header, .submit_post, .reply_wrap, .post_full_like_wrap, .replies_list, .reply_fakebox_wrap, .im-mess-stack .im-mess-stack--mess li:last-of-type, #pv_author_block, .feed_new_posts, .copy_quote, .profile_info_block, .ui_search, .audio_page_player, .audio_layer_rows_cont, .eltt, .page_actions_wrap, .submit_post_box, .reply_box, .im-page--header-chat, .im-chat-input, .group_list_row, .audio_friend_selected, .im-page--mess-search, .im-page.im-page_classic .im-page--chat-input, .docs_item, * [class*="box_title"], * [class*="profile_btn_cut_"], .im-to-end, .im-mess_unread {
+  .top_notify_wrap, .top_notify_show_all, .top_notify_header, .submit_post, .reply_wrap, .post_full_like_wrap, .replies_list, .reply_fakebox_wrap, .im-mess-stack .im-mess-stack--mess li:last-of-type, #pv_author_block, .feed_new_posts, .copy_quote, .profile_info_block, .ui_search, .audio_page_player, .audio_layer_rows_cont, .eltt, .page_actions_wrap, .submit_post_box, .reply_box, .im-page--header-chat, .im-chat-input, .group_list_row, .audio_friend_selected, .im-page--mess-search, .im-page.im-page_classic .im-page--chat-input, .pv_author_block, .docs_item, * [class*="box_title"], * [class*="profile_btn_cut_"], .im-to-end, .im-mess_unread {
     border: 0px !important; }
 
   .page_poll_percent {

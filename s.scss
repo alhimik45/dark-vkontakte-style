@@ -70,6 +70,7 @@ $bordered-elements: (
 	'.audio_friend_selected',
 	'.im-page--mess-search',
 	'.im-page.im-page_classic .im-page--chat-input',
+	'.pv_author_block',
 	$doc-item-list
 	);
 $text-elements: (
@@ -140,6 +141,7 @@ $no-bg: (
 	'.im-page.im-page_classic .im-page--chat-body-wrap-inner',
 	'.im-page a.im-page--back-button:hover::before',
 	'.im-page.im-page_classic .im-page--dcontent',
+	'.pv_author_block',
 	$headers
 	);
 $choose-element: '#docs_choose_rows', '#choose_audio_rows';
@@ -238,7 +240,7 @@ $light-semi-transparent-bg: $text-box;
 $dashed-border: $text-box;
 $hidden-content: $main-header, $my-page-stat, $audio-bottom, $feed-elements, $ads, $bad-ui;
 
-@-moz-document regexp("https?://new\.vk\.com(?!(/stats)).*") {
+@-moz-document regexp("https?://new\.vk\.com(?!(/stats|/editapp)).*") {
 	#{$no-bg} {
 		background: none !important;
 	}
